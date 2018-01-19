@@ -31,9 +31,20 @@ var server = http.createServer(function (req, resp) {
         });
         
     } else {
-        resp.writeHead(200, { 'Content-Type': 'text/html' });
-        resp.write('<h1>Product Manager</h1><br /><br />Decide where you wanna go to... ' + req.url);
-        resp.end();
+        fs.readFile("AppPages/main.html", function (error, pgResp) {
+            if (error) {
+                resp.writeHead(404);
+                resp.write('Contents you are looking are Not Found');
+            } else {
+                resp.writeHead(200, { 'Content-Type': 'text/html' });
+                resp.write(pgResp);
+            }
+             
+            resp.end();
+        });
+        // resp.writeHead(200, { 'Content-Type': 'text/html' });
+        // resp.write("<h1>Product Manager</h1><br /><br />Decide where you wanna go to... ");
+        // resp.end();
     }
 });
 //5.
