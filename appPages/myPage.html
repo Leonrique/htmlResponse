@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The Page Returned by Making Http Call to Node.js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <style type="text/css">
+        table, td {
+          border:2px;
+          padding: 5px;
+        }
+
+        #save {
+            width: 300px;
+        }
+
+        #divrow {
+            padding-left: 10px;
+        }
+
+        body {
+            background-color: antiquewhite
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form method="get" action="/pageCreate">
+        <button type="submit">go to pageCreate</button>
+    </form> -->
+    <!-- <a onclick="window.location.href='/pageCreate'" >go to pageCreate</a> -->
+    <button onclick="window.location.href='/pageCreate'">go to pageCreate</button>
+
+    <h1>Product Information Page</h1>
+    
+    <div id="divrow" class="row">
+        <div class="col-md-06">
+            <table>
+                <tr>
+                    <td>Product Id:</td>
+                    <td>
+                        <input type="text" class="form-control"/>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Product Name:</td>
+                    <td>
+                        <input type="text" class="form-control" />
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="save" type="button" class="btn" value="Save"/>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-06">
+            <table>
+                <tr>
+                    <td>Product Id:</td>
+                    <td>
+                        <input type="text" class="form-control"/>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Product Name:</td>
+                    <td>
+                        <input type="text" class="form-control" />
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="save" type="button" class="btn" value="Save"/>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

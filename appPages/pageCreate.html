@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The Page Returned by Making Http Call to Node.js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <style type="text/css">
+        table, td {
+          border:2px;
+          padding: 5px;
+        }
+
+        #save {
+            width: 300px;
+        }
+
+        #divrow {
+            padding-left: 10px;
+        }
+
+        body {
+            background-color: bisque
+        }
+    </style>
+</head>
+
+<body>
+  <!-- <form method="get" action="/myPage">
+      <button type="submit">go to myPage</button>
+  </form> -->
+  <!-- <a href="window.location.href='/myPage'">go to myPage</a> -->
+
+  <button onclick="window.location.href='/myPage'">go to myPage</button>
+
+  <h1>Product Information Page</h1>
+    
+    <div id="divrow" class="row">
+        <div class="col-md-06">
+            <table>
+                <tr>
+                    <td>Product Id:</td>
+                    <td>
+                        <input type="text" class="form-control"/>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Product Name:</td>
+                    <td>
+                        <input type="text" class="form-control" />
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="save" type="button" class="btn" value="Save"/>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-06">
+            <table>
+                <tr>
+                    <td>Product Id:</td>
+                    <td>
+                        <input type="text" class="form-control"/>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Product Name:</td>
+                    <td>
+                        <input type="text" class="form-control" />
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="save" type="button" class="btn" value="Save"/>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="divrow" class="row">
+      <div class="col-md-06">
+          <table>
+              <tr>
+                  <td>Product Id:</td>
+                  <td>
+                      <input type="text" class="form-control"/>
+                      
+                  </td>
+              </tr>
+              
+              <tr>
+                  <td>Product Name:</td>
+                  <td>
+                      <input type="text" class="form-control" />
+                      
+                  </td>
+              </tr>
+              
+              <tr>
+                  <td></td>
+                  <td>
+                      <input id="save" type="button" class="btn" value="Save"/>
+                      
+                  </td>
+              </tr>
+          </table>
+      </div>
+
+      <div class="col-md-06">
+          <table>
+              <tr>
+                  <td>Product Id:</td>
+                  <td>
+                      <input type="text" class="form-control"/>
+                      
+                  </td>
+              </tr>
+              
+              <tr>
+                  <td>Product Name:</td>
+                  <td>
+                      <input type="text" class="form-control" />
+                      
+                  </td>
+              </tr>
+              
+              <tr>
+                  <td></td>
+                  <td>
+                      <input id="save" type="button" class="btn" value="Save"/>
+                      
+                  </td>
+              </tr>
+          </table>
+      </div>
+  </div>
+    
+</body>
+</html>
